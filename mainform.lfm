@@ -1,0 +1,86 @@
+object Form1: TForm1
+  Left = 571
+  Height = 457
+  Top = 364
+  Width = 649
+  Caption = 'Test Compression Write'
+  ClientHeight = 457
+  ClientWidth = 649
+  Constraints.MinHeight = 457
+  Constraints.MinWidth = 649
+  OnResize = FormResize
+  OnShow = FormShow
+  LCLVersion = '2.0.10.0'
+  object totalRecords: TSpinEdit
+    Left = 176
+    Height = 23
+    Top = 33
+    Width = 119
+    AutoSize = False
+    Increment = 10000
+    MaxValue = 1000000
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 23
+    Top = 33
+    Width = 89
+    AutoSize = False
+    Caption = 'Record Count'
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object createText: TButton
+    Left = 25
+    Height = 28
+    Top = 72
+    Width = 89
+    Caption = 'Create Text'
+    OnClick = createTextClick
+    TabOrder = 1
+  end
+  object msg: TLabel
+    Left = 25
+    Height = 24
+    Top = 120
+    Width = 600
+    Alignment = taCenter
+    AutoSize = False
+    Color = clGray
+    Font.Color = clYellow
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object TextOutput: TMemo
+    Left = 25
+    Height = 272
+    Top = 161
+    Width = 600
+    Font.Height = -12
+    Font.Name = 'Liberation Mono'
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 2
+  end
+  object ClearOutput: TButton
+    Left = 280
+    Height = 28
+    Top = 72
+    Width = 89
+    Caption = 'Clear Output'
+    OnClick = ClearOutputClick
+    TabOrder = 3
+  end
+  object writeFile: TButton
+    Left = 536
+    Height = 28
+    Top = 72
+    Width = 89
+    Caption = 'Write File'
+    OnClick = writeFileClick
+    TabOrder = 4
+  end
+end
